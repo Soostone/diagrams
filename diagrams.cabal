@@ -67,7 +67,11 @@ Flag svg
 Library
   Build-depends:     diagrams-core >= 0.6 && < 0.7,
                      diagrams-lib >= 0.6 && < 0.7,
-                     diagrams-contrib >= 0.6 && < 0.7
+                     diagrams-contrib >= 0.6 && < 0.7,
+                     base >= 4.5
+
+  other-modules:
+    Paths_diagrams
 
   if flag(cairo)
     Build-depends:   diagrams-cairo >= 0.6 && < 0.7
